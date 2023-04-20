@@ -15,6 +15,7 @@
 		8307B5E029F0D730005512E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8307B5DE29F0D730005512E9 /* LaunchScreen.storyboard */; };
 		83404DD729F0DB1900C4186A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83404DD629F0DB1900C4186A /* CameraViewController.swift */; };
 		83404DD929F0E3A900C4186A /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83404DD829F0E3A900C4186A /* RecipeViewController.swift */; };
+		83404DDB29F0EE2C00C4186A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83404DDA29F0EE2C00C4186A /* MenuCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8307B5E129F0D730005512E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83404DD629F0DB1900C4186A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		83404DD829F0E3A900C4186A /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		83404DDA29F0EE2C00C4186A /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				8307B5D729F0D72F005512E9 /* MenuViewController.swift */,
 				83404DD629F0DB1900C4186A /* CameraViewController.swift */,
 				83404DD829F0E3A900C4186A /* RecipeViewController.swift */,
+				83404DDA29F0EE2C00C4186A /* MenuCell.swift */,
 				8307B5D929F0D72F005512E9 /* Main.storyboard */,
 				8307B5DC29F0D730005512E9 /* Assets.xcassets */,
 				8307B5DE29F0D730005512E9 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				8307B5D829F0D72F005512E9 /* MenuViewController.swift in Sources */,
 				8307B5D429F0D72F005512E9 /* AppDelegate.swift in Sources */,
+				83404DDB29F0EE2C00C4186A /* MenuCell.swift in Sources */,
 				83404DD729F0DB1900C4186A /* CameraViewController.swift in Sources */,
 				8307B5D629F0D72F005512E9 /* SceneDelegate.swift in Sources */,
 				83404DD929F0E3A900C4186A /* RecipeViewController.swift in Sources */,
