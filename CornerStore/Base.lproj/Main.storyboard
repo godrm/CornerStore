@@ -35,6 +35,7 @@
                                 <buttonConfiguration key="configuration" style="filled" title="이걸로 추천"/>
                                 <connections>
                                     <action selector="touchedRecommend:" destination="PVF-JZ-Ww2" eventType="touchUpInside" id="9dr-Ei-JEk"/>
+                                    <segue destination="712-Bq-9vS" kind="showDetail" id="CI9-O5-A9e"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izs-EV-I3R">
@@ -68,7 +69,65 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sa4-dk-MCm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1785" y="-277"/>
+            <point key="canvasLocation" x="1720" y="-277"/>
+        </scene>
+        <!--Recipe View Controller-->
+        <scene sceneID="OF5-If-noy">
+            <objects>
+                <viewController id="712-Bq-9vS" customClass="RecipeViewController" customModule="CornerStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jaw-gJ-yYx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="레시피-바나나커피" translatesAutoresizingMaskIntoConstraints="NO" id="QNT-5x-x06">
+                                <rect key="frame" x="16" y="178" width="361" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Gry-7r-iZt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😋바나나 카페모카" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww5-o6-umE">
+                                <rect key="frame" x="16" y="78" width="361" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="z6M-Sh-CsZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fWg-IC-6Zy">
+                                <rect key="frame" x="16" y="418" width="361" height="384"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">제대로 고르셨네요!
+이 레시피는 한 번도 못 먹어본 사람은 있어도 한 번만 먹어본 사람은 없다고 합니다</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g4m-ma-Vmq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fWg-IC-6Zy" firstAttribute="top" secondItem="QNT-5x-x06" secondAttribute="bottom" constant="20" id="9EL-aE-dUb"/>
+                            <constraint firstItem="ww5-o6-umE" firstAttribute="leading" secondItem="g4m-ma-Vmq" secondAttribute="leading" constant="16" id="Ay2-h6-6AU"/>
+                            <constraint firstItem="fWg-IC-6Zy" firstAttribute="leading" secondItem="g4m-ma-Vmq" secondAttribute="leading" constant="16" id="CEZ-e9-7ys"/>
+                            <constraint firstItem="ww5-o6-umE" firstAttribute="top" secondItem="g4m-ma-Vmq" secondAttribute="top" constant="78" id="WOD-ra-kXc"/>
+                            <constraint firstItem="g4m-ma-Vmq" firstAttribute="trailing" secondItem="QNT-5x-x06" secondAttribute="trailing" constant="16" id="afL-cJ-w1d"/>
+                            <constraint firstItem="g4m-ma-Vmq" firstAttribute="trailing" secondItem="fWg-IC-6Zy" secondAttribute="trailing" constant="16" id="hBM-UF-sR5"/>
+                            <constraint firstItem="QNT-5x-x06" firstAttribute="leading" secondItem="g4m-ma-Vmq" secondAttribute="leading" constant="16" id="jiI-ig-a2c"/>
+                            <constraint firstItem="g4m-ma-Vmq" firstAttribute="trailing" secondItem="ww5-o6-umE" secondAttribute="trailing" constant="16" id="kYa-ur-MI4"/>
+                            <constraint firstItem="g4m-ma-Vmq" firstAttribute="bottom" secondItem="fWg-IC-6Zy" secondAttribute="bottom" constant="40" id="pKI-Um-MPs"/>
+                            <constraint firstItem="QNT-5x-x06" firstAttribute="top" secondItem="ww5-o6-umE" secondAttribute="bottom" constant="20" id="tg2-yV-CcB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recipeText" destination="fWg-IC-6Zy" id="DYY-jN-shs"/>
+                        <outlet property="selectedImage" destination="QNT-5x-x06" id="eFD-2n-U4C"/>
+                        <outlet property="selectedTitle" destination="ww5-o6-umE" id="1HH-q0-Ukp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OfS-7b-DSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2515" y="-277"/>
         </scene>
         <!--즐겨찾기-->
         <scene sceneID="mbe-lw-fzV">
@@ -175,7 +234,7 @@
         <!--레시피-->
         <scene sceneID="yVs-du-xHt">
             <objects>
-                <viewController id="OLq-lg-JKf" customClass="RecipeViewController" customModule="CornerStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="OLq-lg-JKf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lCB-kb-iK1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -244,6 +303,10 @@
         <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="oven" catalog="system" width="128" height="98"/>
+        <image name="레시피-바나나커피" width="550.66668701171875" height="224.66667175292969"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
