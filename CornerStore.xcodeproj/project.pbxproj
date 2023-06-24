@@ -18,6 +18,7 @@
 		83404DD729F0DB1900C4186A /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83404DD629F0DB1900C4186A /* CameraViewController.swift */; };
 		83404DD929F0E3A900C4186A /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83404DD829F0E3A900C4186A /* RecipeViewController.swift */; };
 		83404DDB29F0EE2C00C4186A /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83404DDA29F0EE2C00C4186A /* MenuCell.swift */; };
+		83C7AB1C2A46939100CDDC7B /* MilkClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 83C7AB1B2A46939100CDDC7B /* MilkClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		83404DD629F0DB1900C4186A /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		83404DD829F0E3A900C4186A /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		83404DDA29F0EE2C00C4186A /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		83C7AB1B2A46939100CDDC7B /* MilkClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MilkClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				83404DD829F0E3A900C4186A /* RecipeViewController.swift */,
 				83404DDA29F0EE2C00C4186A /* MenuCell.swift */,
 				833D38462A45DAF400F60B98 /* AvengersClassifier.mlmodel */,
+				83C7AB1B2A46939100CDDC7B /* MilkClassifier.mlmodel */,
 				8307B5D929F0D72F005512E9 /* Main.storyboard */,
 				8307B5DC29F0D730005512E9 /* Assets.xcassets */,
 				8307B5DE29F0D730005512E9 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8307B5D829F0D72F005512E9 /* MenuViewController.swift in Sources */,
+				83C7AB1C2A46939100CDDC7B /* MilkClassifier.mlmodel in Sources */,
 				8307B5D429F0D72F005512E9 /* AppDelegate.swift in Sources */,
 				83404DDB29F0EE2C00C4186A /* MenuCell.swift in Sources */,
 				833D38472A45DAF400F60B98 /* AvengersClassifier.mlmodel in Sources */,
@@ -310,6 +314,8 @@
 				DEVELOPMENT_TEAM = B3PWYBKFUK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CornerStore/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라를 사용해야 합니다";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범을 사용해야 합니다";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -338,6 +344,8 @@
 				DEVELOPMENT_TEAM = B3PWYBKFUK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CornerStore/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "카메라를 사용해야 합니다";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "앨범을 사용해야 합니다";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
